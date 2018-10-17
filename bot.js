@@ -21,7 +21,7 @@ const Discord = require("discord.js");
 
 	client.on('ready', () => {
 	  console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`Reallÿ ,`,"http://twitch.tv/S-F")
+	client.user.setGame(`Only Really. `,"http://twitch.tv/S-F")
 	  console.log('')
 	  console.log('')
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -45,7 +45,7 @@ const Discord = require("discord.js");
 	  console.log('')
 	});
 
-	const prefix = "$"
+	const prefix = "E"
 	client.on('message', async msg => { 
 		
 		if (msg.author.bot) return undefined;
@@ -265,18 +265,18 @@ const Discord = require("discord.js");
 	});
 
 	client.on("message", message => {
-	 if (message.content === '$help') {
+	 if (message.content === 'Ehelp') {
 	  const embed = new Discord.RichEmbed()
 		  .setColor("#000000")
 		  .setDescription(`
-	5play ⇏ لتشغيل أغنية برابط أو بأسم
-	5skip ⇏ لتجاوز الأغنية الحالية
-	5pause ⇏ ايقاف الأغنية مؤقتا
-	5resume ⇏ لمواصلة الإغنية بعد ايقافها مؤقتا
-	5vol ⇏ لتغيير درجة الصوت 100 - 0
-	5stop ⇏ لإخرآج البوت من الروم
-	5np ⇏ لمعرفة الأغنية المشغلة حاليا
-	5queue ⇏ لمعرفة قائمة التشغيل
+	Eplay ⇏ لتشغيل أغنية برابط أو بأسم
+	Eskip ⇏ لتجاوز الأغنية الحالية
+	Epause ⇏ ايقاف الأغنية مؤقتا
+	Eresume ⇏ لمواصلة الإغنية بعد ايقافها مؤقتا
+	Evol ⇏ لتغيير درجة الصوت 100 - 0
+	Estop ⇏ لإخرآج البوت من الروم
+	Enp ⇏ لمعرفة الأغنية المشغلة حاليا
+	Equeue ⇏ لمعرفة قائمة التشغيل
 	 `)
 	   message.channel.sendEmbed(embed)
 		
